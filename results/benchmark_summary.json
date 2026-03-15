@@ -1,0 +1,149 @@
+{
+  "configs_tested": 6,
+  "results": [
+    {
+      "config_name": "Fixed+Small+Vector",
+      "config": {
+        "chunker": "fixed",
+        "embed_model": "small",
+        "search_mode": "vector",
+        "use_reranker": false,
+        "use_query_rewriter": false
+      },
+      "precision_at_3": 0.9333,
+      "precision_at_5": 0.88,
+      "recall_at_5": 0.161,
+      "mrr": 0.95,
+      "ndcg_at_10": 0.7101,
+      "llm_score": 0.83,
+      "avg_latency_s": 4.1194,
+      "num_chunks": 1019,
+      "cost": {
+        "indexing_embed_cost": 0.006114,
+        "query_embed_cost": 1e-05,
+        "generation_cost": 0.005148,
+        "total_usd": 0.011272
+      }
+    },
+    {
+      "config_name": "Fixed+Small+Hybrid",
+      "config": {
+        "chunker": "fixed",
+        "embed_model": "small",
+        "search_mode": "hybrid",
+        "use_reranker": false,
+        "use_query_rewriter": false
+      },
+      "precision_at_3": 0.9333,
+      "precision_at_5": 0.86,
+      "recall_at_5": 0.1649,
+      "mrr": 0.95,
+      "ndcg_at_10": 0.7141,
+      "llm_score": 0.83,
+      "avg_latency_s": 3.8535,
+      "num_chunks": 1019,
+      "cost": {
+        "indexing_embed_cost": 0.006114,
+        "query_embed_cost": 1e-05,
+        "generation_cost": 0.005038,
+        "total_usd": 0.011162
+      }
+    },
+    {
+      "config_name": "Fixed+Large+Vector",
+      "config": {
+        "chunker": "fixed",
+        "embed_model": "large",
+        "search_mode": "vector",
+        "use_reranker": false,
+        "use_query_rewriter": false
+      },
+      "precision_at_3": 0.8333,
+      "precision_at_5": 0.88,
+      "recall_at_5": 0.1628,
+      "mrr": 0.9333,
+      "ndcg_at_10": 0.6827,
+      "llm_score": 0.82,
+      "avg_latency_s": 4.2195,
+      "num_chunks": 1019,
+      "cost": {
+        "indexing_embed_cost": 0.039741,
+        "query_embed_cost": 6.5e-05,
+        "generation_cost": 0.005041,
+        "total_usd": 0.044848
+      }
+    },
+    {
+      "config_name": "Sentence+Small+Vector",
+      "config": {
+        "chunker": "sentence",
+        "embed_model": "small",
+        "search_mode": "vector",
+        "use_reranker": false,
+        "use_query_rewriter": false
+      },
+      "precision_at_3": 0.9333,
+      "precision_at_5": 0.9,
+      "recall_at_5": 0.1732,
+      "mrr": 1.0,
+      "ndcg_at_10": 0.7051,
+      "llm_score": 0.84,
+      "avg_latency_s": 4.2197,
+      "num_chunks": 887,
+      "cost": {
+        "indexing_embed_cost": 0.005322,
+        "query_embed_cost": 1e-05,
+        "generation_cost": 0.005252,
+        "total_usd": 0.010584
+      }
+    },
+    {
+      "config_name": "Sentence+Small+Hybrid",
+      "config": {
+        "chunker": "sentence",
+        "embed_model": "small",
+        "search_mode": "hybrid",
+        "use_reranker": false,
+        "use_query_rewriter": false
+      },
+      "precision_at_3": 0.9333,
+      "precision_at_5": 0.86,
+      "recall_at_5": 0.1649,
+      "mrr": 0.95,
+      "ndcg_at_10": 0.7083,
+      "llm_score": 0.84,
+      "avg_latency_s": 4.711,
+      "num_chunks": 887,
+      "cost": {
+        "indexing_embed_cost": 0.005322,
+        "query_embed_cost": 1e-05,
+        "generation_cost": 0.005103,
+        "total_usd": 0.010435
+      }
+    },
+    {
+      "config_name": "Sentence+Large+Hybrid+Rerank",
+      "config": {
+        "chunker": "sentence",
+        "embed_model": "large",
+        "search_mode": "hybrid",
+        "use_reranker": true,
+        "use_query_rewriter": true
+      },
+      "precision_at_3": 0.8,
+      "precision_at_5": 0.82,
+      "recall_at_5": 0.1594,
+      "mrr": 0.95,
+      "ndcg_at_10": 0.4699,
+      "llm_score": 0.82,
+      "avg_latency_s": 11.4358,
+      "num_chunks": 887,
+      "cost": {
+        "indexing_embed_cost": 0.034593,
+        "query_embed_cost": 6.5e-05,
+        "generation_cost": 0.003043,
+        "total_usd": 0.037701
+      }
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+openai>=1.0.0
+faiss-cpu>=1.7.4
+rank-bm25>=0.2.2
+tiktoken>=0.5.0
+numpy>=1.24.0
+scipy>=1.10.0
+scikit-learn>=1.2.0
+pandas>=2.0.0
+pymupdf>=1.23.0   # for PDF text extraction: python -m fitz input.pdf
